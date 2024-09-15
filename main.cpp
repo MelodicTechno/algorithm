@@ -1,6 +1,6 @@
-#include "InsertionSort.h"
+#include "DifferArray.h"
 int main()
 {
-	InsertionSort sort;
-	sort.test();
+	DifferArray array;
+	array.showcase();
 }
