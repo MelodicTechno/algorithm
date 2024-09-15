@@ -13,23 +13,38 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\sort">
+      <UniqueIdentifier>{184f45f9-8169-4c01-81cf-53dd292584a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\array">
+      <UniqueIdentifier>{2f7bc5a8-37e3-4ca6-b189-f42e7a8fc65d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sort">
+      <UniqueIdentifier>{a1a05b3f-8dd4-4167-979a-07a913ec5078}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="InsertionSort.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="DifferArray.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InsertionSort.cpp">
+      <Filter>Source Files\sort</Filter>
+    </ClCompile>
+    <ClCompile Include="MergeSort.cpp">
+      <Filter>Source Files\sort</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="InsertionSort.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\sort</Filter>
     </ClInclude>
     <ClInclude Include="DifferArray.h">
+      <Filter>Header Files\array</Filter>
+    </ClInclude>
+    <ClInclude Include="MergeSort.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
