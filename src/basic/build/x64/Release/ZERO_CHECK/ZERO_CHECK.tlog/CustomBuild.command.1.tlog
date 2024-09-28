@@ -1,0 +1,10 @@
+^D:\D\REPO\ALGORITHM\SRC\BASIC\BUILD\CMAKEFILES\E5FFB8E89F4878CC038C33DF9347D9E0\GENERATE.STAMP.RULE
+setlocal
+D:\F\cmake\bin\cmake.exe -SD:/D/repo/algorithm/src/basic -BD:/D/repo/algorithm/src/basic/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/D/repo/algorithm/src/basic/build/mtmath.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
