@@ -1,4 +1,4 @@
-#include "InsertionSort.h"
+#include "InsertionSort.hpp"
 #include <iostream>
 void InsertionSort::sort(vector<int>& nums)
 {

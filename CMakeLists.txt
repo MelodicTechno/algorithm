@@ -1,1 +1,7 @@
-cmake_minimum_required(3.10.0)
+cmake_minimum_required(VERSION 3.10.0)
+project(testadd)
+include_directories("${PROJECT_SOURCE_DIR}/includes")
+# include_directories("${PROJECT_SOURCE_DIR}/src/basic/build/Release")
+add_executable(testadd main.cpp)
+target_link_directories(testadd PRIVATE "${PROJECT_SOURCE_DIR}/src/basic/build/release/")
+target_link_libraries(testadd PRIVATE mtmath)

@@ -1,0 +1,10 @@
+^D:\D\REPO\ALGORITHM\BUILD\CMAKEFILES\38A6FBDD5597EA0B4E2192A309840CBE\GENERATE.STAMP.RULE
+setlocal
+D:\F\cmake\bin\cmake.exe -SD:/D/repo/algorithm -BD:/D/repo/algorithm/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/D/repo/algorithm/build/testadd.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

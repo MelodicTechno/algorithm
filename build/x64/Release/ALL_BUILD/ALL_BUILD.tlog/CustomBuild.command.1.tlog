@@ -1,0 +1,10 @@
+^D:\D\REPO\ALGORITHM\CMAKELISTS.TXT
+setlocal
+D:\F\cmake\bin\cmake.exe -SD:/D/repo/algorithm -BD:/D/repo/algorithm/build --check-stamp-file D:/D/repo/algorithm/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

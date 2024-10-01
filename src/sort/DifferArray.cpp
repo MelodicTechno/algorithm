@@ -1,4 +1,4 @@
-#include "DifferArray.h"
+#include "DifferArray.hpp"
 #include <iostream>
 vector<int> DifferArray::getdiff()
 {

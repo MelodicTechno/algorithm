@@ -10,5 +10,5 @@ private:
 public:
     Sort(/* args */);
     ~Sort();
-    void run()
+    void run();
 };

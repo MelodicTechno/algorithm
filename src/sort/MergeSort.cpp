@@ -1,4 +1,4 @@
-#include "MergeSort.h"
+#include "MergeSort.hpp"
 void MergeSort::sort(std::vector<int> tosort)
 {
 	

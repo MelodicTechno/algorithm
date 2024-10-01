@@ -1,6 +1,7 @@
-#include "InsertionSort.h"
+#include "basic/add.h"
+#include <iostream>
+
 int main()
 {
-	InsertionSort sort;
-	sort.test();
+	std::cout << mtmath::add(1, 2);
 }
