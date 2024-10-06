@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.10)
+include_directories("../../includes")
+project(sort)
+# add_library(sort Sort.cpp QuickSort.cpp)
+add_executable(sort test.cpp)
