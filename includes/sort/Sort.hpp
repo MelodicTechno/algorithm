@@ -1,14 +1,21 @@
-#include<vector>
+#include <vector>
 
-/*Parent class of */
-template<typename T>
-class Sort
+namespace sort
 {
-private:
-    /* data */
-    std::vector<T> testcase;
-public:
-    Sort(/* args */);
-    ~Sort();
-    void run();
-};
+    template <typename T>
+    class Sort
+    {
+    private:
+        /* data */
+        std::vector<T> testcase;
+        std::vector<T> data;
+
+    public:
+        // Default constructor
+        Sort() = default;
+
+        // Destructor
+        ~Sort() = default;
+        virtual void sort(std::vector<T>& to_sort) = 0;
+    };
+}
