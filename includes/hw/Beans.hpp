@@ -19,6 +19,7 @@ namespace hw
         Beans(int n);
         // using memoization methods
         int memo(int n);
+        int helper(int n);
         // in an iterate way
         int rec(int n);
         // run the two methods

@@ -4,6 +4,10 @@
 int main()
 {
     hw::Beans beansTest(5);
-    int ans = beansTest.rec(5);
-    std::cout << ans << std::endl;
+    for (int i = 1; i < 20; i++)
+    {
+        std::cout << "input: " << i << std::endl;
+        std::cout << "recurssive way: " << beansTest.rec(i) << std::endl;
+        std::cout << "memoization way: " << beansTest.memo(i) << std::endl;
+    }
 }

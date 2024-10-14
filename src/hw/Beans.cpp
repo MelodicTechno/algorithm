@@ -1,11 +1,27 @@
 #include "hw/Beans.hpp"
 #include <iostream>
+#include <vector>
+
+std::vector<int> dp;
 
 hw::Beans::Beans(int n) : caseN(n) {};
 
 int hw::Beans::memo(int n)
 {
-    return 0;
+    dp = std::vector<int>(n + 1, -1);
+    return helper(n);
+}
+
+int hw::Beans::helper(int n) {
+    // base cases
+    if (n == 0) return 1;
+    if (n < 0) return 0;
+
+    // memoization check
+    if (dp[n] != -1) return dp[n];
+
+    // store the result in dp array
+    return dp[n] = helper(n - 1) + helper(n - 2) + helper(n - 3);
 }
 
 int hw::Beans::rec(int n)
