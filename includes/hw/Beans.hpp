@@ -20,10 +20,10 @@ namespace hw
         // using memoization methods
         int memo(int n);
         int helper(int n);
-        // in an iterate way
+        // in a recurssive way
         int rec(int n);
-        // run the two methods
-        void show();
+        // in an iterrative way
+        int it(int n);
     };
 }
 
