@@ -9,5 +9,6 @@ int main()
         std::cout << "input: " << i << std::endl;
         std::cout << "recurssive way: " << beansTest.rec(i) << std::endl;
         std::cout << "memoization way: " << beansTest.memo(i) << std::endl;
+        std::cout << "iterative way: " << beansTest.it(i) << std::endl;
     }
 }

@@ -33,8 +33,23 @@ int hw::Beans::rec(int n)
     return this->rec(n - 1) + this->rec(n - 2) + this->rec(n - 3);
 }
 
-void hw::Beans::show()
+int hw::Beans::it(int n)
 {
-    this->memo(this->caseN);
-    this->rec(this->caseN);
+    if (n == 0) return 1;
+    if (n == 1) return 1;
+    if (n == 2) return 2;
+    if (n == 3) return 4;
+
+    int tmp1 = 4;
+    int tmp2 = 2;
+    int tmp3 = 1;
+    int cur = 4;
+    for (int i = 4; i <= n; i++)
+    {
+        cur = tmp1 + tmp2 + tmp3;
+        tmp3 = tmp2;
+        tmp2 = tmp1;
+        tmp1 = cur;
+    }
+    return cur;
 }
